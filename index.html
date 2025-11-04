@@ -9,70 +9,84 @@
       font-family: "Poppins", sans-serif;
       background: linear-gradient(180deg, #0a0e2a, #1a2a5a);
       color: white;
-      text-align: center;
       margin: 0;
       padding: 0;
     }
 
     header {
       background-color: rgba(0, 0, 0, 0.3);
-      padding: 20px 0;
+      text-align: center;
+      padding: 25px 10px;
     }
 
     h1 {
       color: #6fa8dc;
-      margin-bottom: 5px;
+      margin: 0;
     }
 
     h2 {
-      font-weight: normal;
       color: #bcd4f5;
-      margin-top: 0;
+      font-weight: 400;
+      margin-top: 5px;
     }
 
-    table {
-      width: 95%;
-      max-width: 900px;
+    .agenda {
+      max-width: 750px;
       margin: 30px auto;
-      border-collapse: collapse;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
-      overflow: hidden;
+      padding: 20px 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    th, td {
-      padding: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      font-size: 15px;
+    .dia {
+      text-align: left;
+      margin-bottom: 30px;
+      border-left: 4px solid #6fa8dc;
+      padding-left: 15px;
     }
 
-    th {
-      background-color: rgba(0, 0, 0, 0.4);
+    .dia h3 {
       color: #6fa8dc;
-      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-size: 20px;
     }
 
-    tr:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+    .horario {
+      margin-left: 10px;
+      font-size: 16px;
+      line-height: 1.8;
     }
 
-    td:first-child {
-      font-weight: bold;
+    .disponivel {
+      color: #7CFC00;
+    }
+
+    .indisponivel {
+      color: #ccc;
+      text-decoration: line-through;
+    }
+
+    .virtual {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 10px;
+      border-radius: 6px;
+      font-style: italic;
       color: #bcd4f5;
     }
 
     .obs {
-      margin-top: 20px;
-      font-size: 15px;
+      text-align: center;
       color: #bcd4f5;
-      line-height: 1.5;
+      font-size: 15px;
+      margin-top: 25px;
     }
 
     .botao {
       display: inline-block;
-      margin-top: 25px;
+      margin: 25px auto;
       padding: 12px 25px;
-      background-color: #6fa8dc;
+      background-color: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -81,7 +95,17 @@
     }
 
     .botao:hover {
-      background-color: #508bc2;
+      background-color: #1eb85a;
+    }
+
+    a.horario-link {
+      text-decoration: none;
+      color: #7CFC00;
+      font-weight: 500;
+    }
+
+    a.horario-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -92,31 +116,56 @@
     <h2>Escala de Atendimento de Pastores</h2>
   </header>
 
-  <table>
-    <tr>
-      <th>Dia</th>
-      <th>Pastor(a)</th>
-      <th>09:00</th>
-      <th>10:00</th>
-      <th>11:00</th>
-      <th>14:00</th>
-    </tr>
-    <tr><td>Segunda</td><td>Pr. Edegar</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Terça</td><td>Varlon</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Quarta</td><td>Adriana</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Quinta</td><td>Pr. Renato</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Sexta</td><td>Pr. Max</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Sábado</td><td>Pra. Lilian</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Domingo</td><td>Bianca</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Quinta (extra)</td><td>Ap. Valter e Deyviane<br><small>(Pastores e Líderes)</small></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
-  </table>
+  <section class="agenda">
+
+    <div class="dia">
+      <h3>Segunda — Pr. Edegar</h3>
+      <div class="horario">
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2008:00%20com%20Pr.%20Edegar" target="_blank">🕗 08:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2009:00%20com%20Pr.%20Edegar" target="_blank">🕘 09:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2010:00%20com%20Pr.%20Edegar" target="_blank">🕙 10:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2011:00%20com%20Pr.%20Edegar" target="_blank">🕚 11:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2014:00%20com%20Pr.%20Edegar" target="_blank">🕓 14:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2015:00%20com%20Pr.%20Edegar" target="_blank">🕔 15:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2016:00%20com%20Pr.%20Edegar" target="_blank">🕕 16:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Gostaria%20de%20agendar%20às%2017:00%20com%20Pr.%20Edegar" target="_blank">🕖 17:00</a> <span class="disponivel">Disponível</span>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h3>Terça — Varlon</h3>
+      <div class="horario">
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2008:00%20com%20Varlon" target="_blank">🕗 08:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2009:00%20com%20Varlon" target="_blank">🕘 09:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2010:00%20com%20Varlon" target="_blank">🕙 10:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2011:00%20com%20Varlon" target="_blank">🕚 11:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2014:00%20com%20Varlon" target="_blank">🕓 14:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2015:00%20com%20Varlon" target="_blank">🕔 15:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2016:00%20com%20Varlon" target="_blank">🕕 16:00</a> <span class="disponivel">Disponível</span><br>
+        <a class="horario-link" href="https://wa.me/5538988460972?text=Agendamento%20às%2017:00%20com%20Varlon" target="_blank">🕖 17:00</a> <span class="disponivel">Disponível</span>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h3>Sábado — Pra. Lilian</h3>
+      <div class="virtual">📱 Atendimento Virtual via WhatsApp</div>
+    </div>
+
+    <div class="dia">
+      <h3>Domingo — Bianca</h3>
+      <div class="virtual">📱 Atendimento Virtual via WhatsApp</div>
+    </div>
+
+  </section>
 
   <div class="obs">
-    <p><strong>Legenda:</strong> ✅ Disponível &nbsp;&nbsp; ❌ Ocupado</p>
-    <p><strong>Horários de Atendimento:</strong><br>08:00 às 11:30 | 14:00 às 17:00</p>
+    <p><strong>Horário Geral de Atendimento:</strong><br>
+    08:00 às 11:30 | 14:00 às 17:00</p>
   </div>
 
-  <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="botao">Agendar pelo WhatsApp</a>
+  <div style="text-align:center;">
+    <a href="https://wa.me/5538988460972" target="_blank" class="botao">💬 Agendar pelo WhatsApp</a>
+  </div>
 
 </body>
 </html>
