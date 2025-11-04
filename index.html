@@ -3,60 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Família Apóstola Ide 💙</title>
+  <title>Escala de Atendimento Pastoral</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1b2a;
-      color: #fff;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #00b4d8;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .dia {
-      background-color: #1b263b;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    button {
-      background-color: #00b4d8;
-      border: none;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(180deg, #0a0e2a, #1a2a5a);
       color: white;
-      border-radius: 6px;
-      padding: 5px 10px;
-      margin: 4px;
-      cursor: pointer;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    p {
-      color: #adb5bd;
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px 0;
+    }
+
+    h1 {
+      color: #6fa8dc;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #bcd4f5;
+      margin-top: 0;
+    }
+
+    .agenda {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #6fa8dc;
+      text-transform: uppercase;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .obs {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #bcd4f5;
+      line-height: 1.5;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #6fa8dc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #508bc2;
     }
   </style>
 </head>
 <body>
-  <h1>Família Apóstola Ide 💙</h1>
-  <h2>Escala de Atendimento Pastoral</h2>
 
-  <div class="dia"><strong>Segunda:</strong> Pr. Edegar</div>
-  <div class="dia"><strong>Terça:</strong> Varlon</div>
-  <div class="dia"><strong>Quarta:</strong> Adriana</div>
-  <div class="dia"><strong>Quinta:</strong> Pr. Renato</div>
-  <div class="dia"><strong>Sexta:</strong> Pr. Max</div>
-  <div class="dia"><strong>Sábado:</strong> Pra. Lilian</div>
+  <header>
+    <h1>Família Apóstola Ide 💙</h1>
+    <h2>Escala de Atendimento de Pastores</h2>
+  </header>
 
-  <p style="text-align:center;">Horário: 08:00 às 11:30 | 14:00 às 17:00<br>Início: 03/11/2025</p>
+  <section class="agenda">
+    <table>
+      <tr>
+        <th>Dia</th>
+        <th>Responsável</th>
+      </tr>
+      <tr><td>Segunda</td><td>Pr. Edegar</td></tr>
+      <tr><td>Terça</td><td>Varlon</td></tr>
+      <tr><td>Quarta</td><td>Adriana</td></tr>
+      <tr><td>Quinta</td><td>Pr. Renato</td></tr>
+      <tr><td>Sexta</td><td>Pr. Max</td></tr>
+      <tr><td>Sábado</td><td>Pra. Lilian</td></tr>
+      <tr><td>Domingo</td><td>Bianca</td></tr>
+      <tr><td>Quinta (extra)</td><td>Apóstolos Valter e Deyviane – Atendimento a Pastores e Líderes</td></tr>
+    </table>
+  </section>
 
-  <div style="text-align:center;">
-    <button onclick="window.open('https://wa.me/5538988460972?text=Olá! Gostaria de agendar um atendimento pastoral.', '_blank')">
-      Agendar no WhatsApp
-    </button>
+  <div class="obs">
+    <p><strong>Horários:</strong><br>
+    08:00 às 11:30<br>
+    14:00 às 17:00</p>
   </div>
+
+  <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="botao">Agendar pelo WhatsApp</a>
+
 </body>
 </html>
