@@ -30,24 +30,20 @@
       margin-top: 0;
     }
 
-    .agenda {
-      width: 90%;
-      max-width: 800px;
+    table {
+      width: 95%;
+      max-width: 900px;
       margin: 30px auto;
       border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
     }
 
     th, td {
-      padding: 15px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 15px;
     }
 
     th {
@@ -58,6 +54,11 @@
 
     tr:hover {
       background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #bcd4f5;
     }
 
     .obs {
@@ -91,27 +92,28 @@
     <h2>Escala de Atendimento de Pastores</h2>
   </header>
 
-  <section class="agenda">
-    <table>
-      <tr>
-        <th>Dia</th>
-        <th>Responsável</th>
-      </tr>
-      <tr><td>Segunda</td><td>Pr. Edegar</td></tr>
-      <tr><td>Terça</td><td>Varlon</td></tr>
-      <tr><td>Quarta</td><td>Adriana</td></tr>
-      <tr><td>Quinta</td><td>Pr. Renato</td></tr>
-      <tr><td>Sexta</td><td>Pr. Max</td></tr>
-      <tr><td>Sábado</td><td>Pra. Lilian</td></tr>
-      <tr><td>Domingo</td><td>Bianca</td></tr>
-      <tr><td>Quinta (extra)</td><td>Apóstolos Valter e Deyviane – Atendimento a Pastores e Líderes</td></tr>
-    </table>
-  </section>
+  <table>
+    <tr>
+      <th>Dia</th>
+      <th>Pastor(a)</th>
+      <th>09:00</th>
+      <th>10:00</th>
+      <th>11:00</th>
+      <th>14:00</th>
+    </tr>
+    <tr><td>Segunda</td><td>Pr. Edegar</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Terça</td><td>Varlon</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Quarta</td><td>Adriana</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Quinta</td><td>Pr. Renato</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Sexta</td><td>Pr. Max</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Sábado</td><td>Pra. Lilian</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Domingo</td><td>Bianca</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Quinta (extra)</td><td>Ap. Valter e Deyviane<br><small>(Pastores e Líderes)</small></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+  </table>
 
   <div class="obs">
-    <p><strong>Horários:</strong><br>
-    08:00 às 11:30<br>
-    14:00 às 17:00</p>
+    <p><strong>Legenda:</strong> ✅ Disponível &nbsp;&nbsp; ❌ Ocupado</p>
+    <p><strong>Horários de Atendimento:</strong><br>08:00 às 11:30 | 14:00 às 17:00</p>
   </div>
 
   <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="botao">Agendar pelo WhatsApp</a>
